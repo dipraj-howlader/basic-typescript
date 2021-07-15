@@ -40,13 +40,15 @@ var persons = [
 var greeting = function (name) {
     console.log("Hello " + name);
 };
-greeting("Dipraj");
+greeting("dipraj");
 var add = function (a, b) {
     return a + b;
 };
+var addd = add(2, 5);
+console.log(addd);
 var introduce = function (_a) {
-    var name = _a.name, age = _a.age;
-    console.log("Hello, my name is  " + name + ", And I'm " + age + "!");
+    var name = _a.name, age = _a.age, hobby = _a.hobby;
+    console.log("Hello, my name is  " + name + ", And I'm " + age + "!, my hobby is " + hobby);
 };
 introduce({
     name: "Dipraj Howlader",
@@ -56,8 +58,10 @@ introduce({
 var getArray = function (arr) {
     return arr;
 };
-getArray(['1edrew', 'hjdfhjddfjh dfndj']);
-getArray([1, 2, 43, 4]);
+var arr = getArray([1, 2, 43, 4]);
+console.log(arr);
+var dtr = getArray(['1edrew', 'hjdfhjddfjh dfndj']);
+console.log(dtr);
 // enum
 var Week;
 (function (Week) {

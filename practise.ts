@@ -62,14 +62,17 @@ const greeting = (name: string) : void => {
     console.log(`Hello ${name}`)
 }
 
-greeting("Dipraj")
+greeting("dipraj")
 
 const add = (a: number, b: number): number => {
     return a + b 
 }
 
-const introduce = ({name, age} : Person) : void => {
-    console.log(`Hello, my name is  ${name}, And I'm ${age}!`)
+const addd:number= add(2,5);
+console.log(addd);
+
+const introduce = ({name, age, hobby} : Person) : void => {
+    console.log(`Hello, my name is  ${name}, And I'm ${age}!, my hobby is ${hobby}`)
 }
 
 introduce({
@@ -83,8 +86,10 @@ const getArray = <T>(arr: T[]): T[] => {
     return arr
 }
 
-getArray<string>(['1edrew', 'hjdfhjddfjh dfndj' ]);
-getArray<number>([ 1, 2,43, 4 ]);
+const arr=  getArray<number>([ 1, 2,43, 4 ]);
+console.log(arr);
+const dtr=  getArray<string>(['1edrew', 'hjdfhjddfjh dfndj' ]);
+console.log(dtr);
 
 // enum
 
